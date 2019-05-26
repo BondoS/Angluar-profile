@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <app-logo>
+  </app-logo>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="right-nav d-lg-flex my-2 my-lg-0 navbar-nav {{dir}}">
+      <app-search class="nav-item"></app-search>
+      <app-messages class="nav-item"></app-messages>
+      <app-notifications class="nav-item"></app-notifications>
+      <app-profile-options [dir]=dir class="nav-item"></app-profile-options>
+      <app-profile-pic class="nav-item" [picWidth]='40' [theme]="2"></app-profile-pic>
+      <app-verify class="nav-item"></app-verify>
+    </ul>
+  </div>
+</nav>

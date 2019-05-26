@@ -1,0 +1,28 @@
+a {
+  color: #454545;
+  font-weight: bold;
+}
+.dropdown .nav-link{
+  padding-inline-end: 46px;
+  padding-inline-start: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+.rtl.dropdown{
+  text-align: right;
+}
+.icon-expand:before {
+  color: #AEAEAE;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-expand.ltr:before{
+  right: 10px;
+}
+.icon-expand.rtl:before{
+  left: 10px;
+}

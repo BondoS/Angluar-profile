@@ -1,0 +1,25 @@
+.prf-pic-contain {
+  position: relative;
+  margin: auto;
+  display: table;
+  padding-top: 20px;
+}
+.icon-baseline-verified {
+  position: absolute;
+  bottom: 8px;
+  right: 9px;
+  color: #32c0cc;
+  background: #fff;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border: 4px #347bc0 solid;
+  font-size: 19px;
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+  }
+}

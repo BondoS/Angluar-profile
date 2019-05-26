@@ -1,0 +1,22 @@
+<div class="footer-nav {{dir}}">
+  <div class="select-prnt d-inline">
+    <select class="bootstrap-select">
+      <option value="1" selected>zidyia</option>
+      <option value="2">Option</option>
+    </select>
+  </div>
+  <!-- <button *ngIf="dir =='rtl'" class="lang" (click)="onChangeDir('ltr')">Engilsh</button>
+<button *ngIf="dir =='ltr'" class="lang" (click)="onChangeDir('rtl')">عريي</button> -->
+  <div class="select-prnt d-inline">
+    <select class="bootstrap-select bounce" (change)="onChangeDirSelect($event)">
+      <option *ngIf="dir == 'ltr'" value="ltr" (click)="onChangeDir('ltr')" selected>English</option>
+      <option *ngIf="dir == 'ltr'" value="rtl" (click)="onChangeDir('rtl')">عريي</option>
+      <option *ngIf="dir == 'rtl'" value="ltr" (click)="onChangeDir('ltr')">English</option>
+      <option *ngIf="dir == 'rtl'" value="rtl" (click)="onChangeDir('rtl')" selected="selected">عريي</option>
+    </select>
+  </div>
+  <a href="#">Privacy</a>
+  <a href="#">Community</a>
+  <a href="#">FAQ</a>
+  <!-- <div>{{dir}}</div> -->
+</div>

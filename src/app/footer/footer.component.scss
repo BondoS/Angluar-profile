@@ -1,0 +1,42 @@
+.footer-nav{
+  margin-top: 40px;
+  &.rtl{
+    text-align: right;
+  }
+}
+
+.select-prnt {
+  width: 80px;
+  padding-inline-end: 20px;
+  border-inline-end: 1px solid #939393;
+  padding-inline-start: 20px;
+  &:first-child {
+    padding-inline-start: 15px;
+  }
+}
+select, a {
+  color: #ABABAB;
+  border: none;
+  font-weight: bold;
+ font-size: 14px;
+}
+a {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+.bounce {
+  animation: bounce_r 2s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes bounce_r {
+  0% { transform:translateY(0) }
+  5.55556% { transform:translateY(0) }
+  11.11111% { transform:translateY(0) }
+  22.22222% { transform:translateY(-5px) }
+  27.77778% { transform:translateY(0) }
+  33.33333% { transform:translateY(-5px) }
+  44.44444% { transform:translateY(0) }
+  100% { transform:translateY(0) }
+}

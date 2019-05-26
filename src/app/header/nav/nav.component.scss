@@ -1,0 +1,69 @@
+.nav-item{
+  position: relative;
+}
+
+app-search {
+  width: 50px;
+  text-align: center;
+}
+app-messages, app-notifications {
+  width: 40px;
+  text-align: center;
+}
+app-profile-pic{
+  width: 55px;
+  text-align: center;
+}
+
+ul.ltr{
+  margin-left: auto;
+}
+ul.rtl{
+  margin-right: auto;
+}
+
+@media(max-width: 920px){
+  .nav-item{
+    height: 40px;
+  }
+  ul {
+    display: block;
+    margin-top: 18px !important;
+  }
+  &.ltr{
+    app-search, app-messages, app-notifications{
+      float: left;
+    }
+    app-profile-pic{
+      float: left;
+      width: 20%;
+    }
+    app-verify{
+      float: left;
+      width: 80%;
+    }
+    app-profile-options{
+      float: left;
+      width: 100%;
+      z-index: 999;
+    }
+  }
+  &.rtl{
+    app-search, app-messages, app-notifications{
+      float: right;
+    }
+    app-profile-pic{
+      float: right;
+      width: 20%;
+    }
+    app-verify{
+      float: right;
+      width: 80%;
+    }
+    app-profile-options{
+      float: right;
+      width: 100%;
+      z-index: 999;
+    }
+  }
+}

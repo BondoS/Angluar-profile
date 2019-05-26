@@ -1,0 +1,122 @@
+.social {
+  display: flex;
+  &-item {
+    color: #fff;
+    background-color: #31a3e7;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    margin-inline-end: 10px;
+    font-size: 20px;
+    &::before {
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+.name,
+.position,
+.location,
+.edit {
+  color: #fff;
+}
+.name {
+  margin: 10px 0 5px 0;
+}
+.position {
+  margin: 5px 0 20px 0;
+}
+.position,
+.location {
+  color: #9ea6d0;
+}
+.location {
+  margin-top: 35px;
+}
+.location span {
+  color: #fff;
+  margin: 0 5px 0 5px;
+}
+.edit {
+  background-color: #27a6f5;
+  width: 180px;
+  padding: 5px 20px 5px 20px;
+  margin: 25px auto 80px auto;
+  display: block;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 30px;
+  @media(max-width: 920px){
+    margin: 25px auto 20px auto;
+
+  }
+}
+.abt-ttl,
+.abt-txt {
+  text-align: start;
+}
+.abt {
+  padding: 25px 15px 10px 15px;
+}
+.abt-ttl {
+  color: #454545;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  @media (max-width: 920px) {
+    padding-top: 20px;
+    color: white;
+  }
+}
+.abt-txt {
+  color: #818182;
+  font-size: 20px;
+  @media (max-width: 920px) {
+    color: white;
+  }
+}
+
+.badges {
+  display: flex;
+  .badge-item {
+    display: inline-block;
+    font-weight: bold;
+    margin-inline-end: 15px;
+    color: #585859;
+    @media (max-width: 920px) {
+      color: white;
+    }
+    &:first-child {
+      padding-inline-start: 0;
+    }
+    .badge-icon {
+      color: #52637a;
+      font-size: 28px;
+      font-weight: bold;
+      padding-bottom: 15px;
+      @media(max-width: 920px){
+        color: white;
+      }
+    }
+  }
+}
+
+.member {
+  color: #52637a;
+  display: block;
+  text-align: start;
+  margin-top: 20px;
+  @media (max-width: 920px) {
+    color: white;
+  }
+}
